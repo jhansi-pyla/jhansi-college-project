@@ -332,7 +332,7 @@ header.sticky
 .marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
-  background-color: #111;
+  background-color: #0A3D62;
   color: #eee;
   overflow: hidden;
   position: relative;

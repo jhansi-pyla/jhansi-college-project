@@ -10,8 +10,8 @@
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
-  padding: 10px;
+  width: 70%;
+  padding: 50px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
 
@@ -21,11 +21,60 @@
   display: table;
   clear: both;
 }
+
+.comment-box{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.comment-box h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.comment-box input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+.comment-box input:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+.comment-box textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+.comment-box textarea:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+.comment-box button{
+    border: 0;
+    padding: 10px 30px;
+    background: #86b0b6;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+}
+.comment-box button:hover{
+    background-color: #718a8e;
+}
+
+
 </style>
 </head>
 <body>
 
-<h2>Two Equal Columns</h2>
+<h2 style="text-align:center;">secure box</h2>
 
 <div class="row">
   <div class="column">
@@ -35,8 +84,19 @@
                 <span>Principal</span>                
             </div>
   </div>
-  <div class="column" style="">
-            <h2>comments</h2><br>
+  <div class="column">
+       <div class="comment-box"> 
+            <h2>comments</h2>
+            <form action="#">
+              <input type="text" name="full-name" placeholder="full-name">
+              <input type="email" name="email" placeholder="emailaddress..">
+              <textarea name="comment" placeholder="type your ..."></textarea>
+              <button type="submit"> submit </button>
+                
+            </form>
+              
+          </div> 
+            <!-- <h2>comments</h2><br>
 
             <form action="#">
               <input type="text" name="full-name" placeholder="full-name">
@@ -49,7 +109,7 @@
               <br>
               <button type="submit"> submit </button>                
             </form>
-  </div>
+  </div> --> 
 </div>
 
 </body>
