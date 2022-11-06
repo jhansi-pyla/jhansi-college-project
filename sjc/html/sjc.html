@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>st.joseph's college</title> 
+    <!-- Font Awesome CSS Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS File Linlk -->
+    
+    <link rel="stylesheet" href="../CSS/style.css">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="#" class="logo">sjc</a>
+        <!-- Menu -->
+        <div id="menu" class="fas fa-bars"></div>
+        <!-- Navigation-->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="student.html">login</a>
+            <a href="#secure box">secure box</a>
+            <a href="#faculty">faculty</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+        <div class="content">
+            <h1>st.joseph's college for women(A)</h1>
+            <h3>re-accredited by naac</h3>
+            <a href="#" class="btn">login</a>
+        </div>
+    </section>
+
+<!-- background image ends here -->
+   
+           <!--  login starts here -->
+    <div class="login" id="login">
+        <h1 class="heading">login</h1>
+        <div class="column">
+             <div class="box-container">
+                <h3 class="title"><a href="faculty.html">faculty login</a></h3>
+                
+            </div>
+            <div class="box-container">
+                <h3 class="title"><a href="student.html" >student login</a></h3>
+            </div>
+        </div>
+        
+
+    <!-- secure box starts-->
+    <div class="secure" id="secure">
+        <h1 class="heading">secure box</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="../images/img3.jpg" alt="">
+                <h3>Dr.(Sr.) Shyji.P.D. M.Com., Ph.D</h3>
+                <span>Principal</span>
+                
+            </div>
+         
+         <!--  <div class="comment-box">
+            <h2>comments</h2>
+            <form action="#">
+              <input type="text" name="full-name" placeholder="full-name">
+              <input type="email" name="email" placeholder="emailaddress..">
+              <textarea name="comment" placeholder="type your ..."></textarea>
+              <button type="submit"> submit </button>
+                
+            </form>
+              
+          </div> -->
+            
+        </div>
+    </div>
+<div>
+
+
+ <!-- <marquee scrollamount="20px" direction="right" style="color:#42f5f2;font-size:30px;font- family:cursive;background-color: lightblue;">
+<img src="../images/phy.jpg" height="250vh">  <img src="../images/chem.jpg"  height="250vh"><img src="../images/mat.jpg" height="250vh"><div class="column" style="background-color: lightblue; ">
+</marquee></div>  -->
+
+<div class="marquee">
+    <ul class="marquee-content">
+      <li><img src="../images/phy.jpg"></li>
+      <li><i class="fab fa-codepen"></i></li>
+      <li><i class="fab fa-free-code-camp"></i></li>
+      <li><i class="fab fa-dev"></i></li>
+      <li><i class="fab fa-react"></i></li>
+      <li><i class="fab fa-vuejs"></i></li>
+      <li><i class="fab fa-angular"></i></li>
+      <li><i class="fab fa-node"></i></li>
+      <li><i class="fab fa-wordpress"></i></li>
+      <li><i class="fab fa-aws"></i></li>
+      <li><i class="fab fa-docker"></i></li>
+      <li><i class="fab fa-android"></i></li>
+    </ul>
+  </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="box-container">
+            <div class="box">
+                <h3>about</h3>
+                <p>This website make students more reliable to the management of the college. students of the college find this more helpful .</p>
+            </div>
+            <div class="box">
+                <h3>departments</h3>
+                <a href="#">physics</a>
+                <a href="#">chemistry</a>
+                <a href="#">maths</a>
+                <a href="#">computer science</a>
+                <a href="#">english</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">login</a>
+                <a href="#">Secure box</a>
+                <a href="#">faculty</a>
+            </div>
+            <div class="box">
+                <h3>Follow sjc</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">youtube</a>
+            </div>
+        </div>
+        <div class="credit">Created by <a href="#">p.jhansi lakshmi </a>&copy; copyright @ 2022</div>
+    </footer>
+
+    <!-- Scroll -->
+    <a href="#home" class="scroll-top">
+        <img src="images/scroll-img.png" alt="">
+    </a>
+    <!-- JQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JS File Link -->
+    <script src="JS/main.js"></script>
+   <script>const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}</script>
+</body>
+
+</html>
