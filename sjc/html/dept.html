@@ -3,6 +3,157 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+:root
+{
+    --blue: #3C6382;
+    --dark-blue: #0A3D62;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
+    font-family: 'Poppins', sans-serif;
+}
+*::selection
+{
+    background: var(--dark-blue);
+    color: #FFF;
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section
+{
+    min-height: 100vh;
+    padding: 1rem 9%;
+    padding-top: 8rem;
+}
+.heading
+{
+    text-align: center;
+    color: var(--blue);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 3rem;
+}
+h1{
+
+  text-align: center;
+
+  }
+.dept{
+    padding-top:  200px;
+  }
+header
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 2rem;
+    /*position: sticky;*/
+    background-color: blanchedalmond;
+}
+header .logo
+{
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+}
+header .logo span
+{
+    color: var(--blue);
+}
+header .navbar a
+{
+    font-size: 1.7rem;
+    margin-left: 0.7rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--dark-blue);
+}
+header .navbar a:hover, header .navbar a.active
+{
+    background: var(--blue);
+    color: #FFF;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header.sticky
+{
+    background: #FFF;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+#menu
+{
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+.home
+{
+    background: url(../images/sjc.jpg) no-repeat;
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home:hover{
+    opacity: 1.0;
+}
+
+.home .content
+{
+    text-align: center;
+    padding-top: 3rem;
+}
+.home .content h1
+{
+    font-size: 5rem;
+    color: var(--dark-blue);
+}
+.home .content h3
+{
+    font-size: 4rem;
+    color: var(--blue);
+    font-weight: normal;
+}
+.home .content .btn
+{
+    display: inline-block;
+    padding: 0.7rem 3rem;
+    color: #FFF;
+    background: var(--blue);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+.home .content .btn:hover
+{
+    background: var(--dark-blue);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
 section,h1 {
   padding: 0 18em;
 }
@@ -10,9 +161,9 @@ section,h1 {
 .grid
  {
   display: grid;
-  grid-template-columns: repeat(3,300px);  /* 3 columns */
-  grid-template-rows: repeat(3,300px); /* 3 rows  */
-  grid-gap:50px 30px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+  grid-template-columns: repeat(3,300px); 
+  grid-template-rows: repeat(3,300px); 
+  grid-gap:50px 80px; 
 }
 
 .grid-item{
@@ -25,23 +176,37 @@ img {
 </style>
 </head>
 <body>
-<article>
-  <h1>
-    3x2 Grid Layout image gallery example
-  </h1>
+   <header>
+        <!-- Logo -->
+        <a href="#" class="logo">sjc</a>
+        <!-- Menu -->
+        <div id="menu" class="fas fa-bars"></div>
+        <!-- Navigation-->
+        <nav class="navbar">
+            <a href="home" class="active">Home</a>
+            <a href="student.html">login</a>
+            <a href="secure.html">secure box</a>
+            <a href="dept.html">faculty</a>
+        </nav>
+    </header>
+    
+      <article class="dept">
+  <h1 >
+    HEAD OF THE DEPARTMENTS
+  </h1><br><br><br><br>
   <section>
     
     <div class="grid">
-      <div class="grid-item"><img src=""></div>
-      <div class="grid-item"><img src="../images/phy.jpg"></div>
-      <div class="grid-item"><img src="../images/phy.jpg"></div>
-      <div class="grid-item"><img src="../images/phy.jpg"></div>
-      <div class="grid-item"><img src="../images/phy.jpg"></div>
-      <div class="grid-item"><img src="../images/phy.jpg"></div>
-      <div class="grid-item"><img src="../images/phy.jpg"></div>
+      <div class="grid-item"><img src="../images/chem1dept.png"></div>
+      <div class="grid-item"><img src="../images/zoologydept.png"></div>
+      <div class="grid-item"><img src="../images/crop.png"></div>
+      <div class="grid-item"><img src="../images/telugu.png"></div>
+      <div class="grid-item"><img src="../images/phyblack.png"></div>
+      
  
     </div>
   </section>
 </article>
+
 
 </body>
