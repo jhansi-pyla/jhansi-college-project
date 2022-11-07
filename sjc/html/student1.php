@@ -15,8 +15,7 @@
 {
     height: 100%;
 	width: 100%;
-/*	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://wallpaperboat.com/wp-content/uploads/2019/06/plain-black-09.jpg');*/
-background-color: #0A3D62;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://wallpaperboat.com/wp-content/uploads/2019/06/plain-black-09.jpg');
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -189,7 +188,22 @@ span
 	</style>
 </head>
 <body>
-	
+	<?php
+		require('db.php');
+		if(isset($_POST['name'])){
+			$name=$_POST["name"];
+			$rollno=$_POST["rollno"];
+			$email=$_POST["email"];
+			$password=$_POST["password"];
+			$passwordcon=$_POST["passwordcon"];
+			$query="INSERT INTO `student` (name,rollno,email,password,passwordcon) VALUES('$name','rollno','$email','$password','$passwordcon')";
+			$result=mysqli_query($conn,$query);
+			if($result){
+				echo "successfully";
+			}
+		}
+		else{
+		?>
     <div class="full-page">
         <div class="navbar">
             <div>
@@ -208,7 +222,7 @@ span
         <div>
          <h1 style="text-align: center;color: whitesmoke;">student login</h1>	
         </div>
-         <div id='login-form'class='login-page'>
+        <div id='login-form'class='login-page'>
             <div class="form-box">
                 <div class='button-box'>
 
@@ -260,8 +274,10 @@ span
                 modal.style.display = "none";
             }
         }
-    </script> 
-   
+    </script>
+    <?php
+    }
+?>
 </body>
 </html>
 

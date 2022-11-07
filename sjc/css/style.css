@@ -116,7 +116,7 @@ header.sticky
     color: var(--blue);
     font-weight: normal;
 }
-.home .content .btn
+/*.home .content .btn
 {
     display: inline-block;
     padding: 0.7rem 3rem;
@@ -126,11 +126,11 @@ header.sticky
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     margin-top: 1rem;
     font-size: 1.7rem;
-}
-.home .content .btn:hover
+}*/
+/*.home .content .btn:hover
 {
     background: var(--dark-blue);
-}
+}*/
 
 .login .column
 {
